@@ -1,40 +1,9 @@
-<!-- 
-The A11Y Project är ett community-drivet initiativ som strävar efter att göra digital tillgänglighet enklare, 
-mer begriplig och lättare att implementera för alla.
-
-Läs lite om projektet:
-https://www.a11yproject.com/about/
-
-
-Tillgänglighet är en viktig del av webbutveckling. Det handlar om att göra webbplatser och appar tillgängliga för alla, inklusive personer med funktionsnedsättningar. 
-Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att använda semantisk HTML, skapa enkel navigering och använda alternativa texter för bilder.
- ____________________________________________________________________________________________________
- 1. Läs noga genom koden och identifiera alla tillgänglighetsproblem.
- 
- 2. Testa kör lighthouse i devtools(Google chrome) och se vilka problem som finns.
-
- 3. Skriv en kort sammanfattning av vad som är fel och hur det kan åtgärdas.
-
- 4. Skriv om koden så att den följer tillgänglighetsstandarder.
-
- 5. Skriv en kort sammanfattning av vad du har ändrat och varför.
-
- 6. Testa din nya kod med andra verktyg för tillgänglighet.
-
- 7. Skriv en kort reflektion över hur det var att göra uppgiften. Vad var svårt? Vad lärde du dig?
- ____________________________________________________________________________________________________
-
--->
-
-
 <!DOCTYPE html>
-<!-- What happens when the language attribute is commented out? -->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Only one `<title>` should be used; multiple titles can cause unexpected behavior and negatively impact SEO and accessibility. -->
   <title>Vase Vista - Artisanal Vases</title>
   <meta name="description"
     content="Elevating spaces through thoughtfully designed vessels that blend form and function in perfect harmony." />
@@ -45,12 +14,10 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 </head>
 
 <body>
-  <!-- Header/Navbar -->
   <header class="header">
     <div class="container">
       <nav class="navbar">
         <a href="#home" class="logo">Vase Vista</a>
-        <!-- Navigation menu with duplicate IDs, inconsistent tabindex, and broken links to a 404 page -->
         <ul class="nav-links">
           <li class="nav-item">
             <a class="nav-link" href="#home">Home</a>
@@ -75,8 +42,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
       <div class="container">
         <div class="hero-content">
           <span class="subtitle">Artisanal Excellence</span>
-          <!-- Two <h1> tags inside .container may affect accessibility and SEO. -->
-
           <h1>Timeless Beauty <br>in Every Curve</h1>
           <p>Each piece tells a story of craftsmanship and elegance, designed to elevate your space and inspire your
             senses.</p>
@@ -100,7 +65,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
           <h2>Curated Excellence</h2>
         </div>
 
-        <!-- Use a <button> instead of a <div> to improve accessibility -->
         <div class="category-filters">
           <button class="filter-btn active">All</button>
           <button class="filter-btn">Ceramic</button>
@@ -221,15 +185,12 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
           <h2>Join Our Community</h2>
           <p>Be the first to know about new collections, exclusive offers, and design inspiration. Subscribe to our
             newsletter for a curated experience.</p>
-
           <form class="newsletter-form">
             <div class="form-group">
               <input type="email" placeholder="Your email address" required>
               <button type="submit" class="btn btn-primary">Subscribe</button>
             </div>
           </form>
-
-          <!-- Instead of using multiple <br> tags to separate paragraphs, use <p> or proper headings for better readability. -->
           <div class="contact-info">
             <div class="info-card">
               <h3>Visit Our Studio</h3>
@@ -260,7 +221,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
           <p>Elevating spaces through thoughtfully designed vessels that blend form and function in perfect harmony.</p>
         </div>
 
-        <!-- Incorrect use of <p> for links: Replace <p> with <a> to ensure proper semantics and accessibility. -->
         <div class="footer-links">
           <div class="footer-column">
             <h4>Quick Links</h4>
@@ -280,18 +240,17 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             </ul>
           </div>
 
-          <!-- 404 pages and # links provide no destination  -->
           <div class="footer-column">
             <h4>Connect</h4>
             <ul>
               <li>
-                <a class="footer-link" href="#">Instagram</a>
+                <a class="footer-link" href="404.html">Instagram</a>
               </li>
               <li>
                 <a class="footer-link" href="404.html">Pinterest</a>
               </li>
               <li>
-                <a class="footer-link" href="#">LinkedIn</a>
+                <a class="footer-link" href="404.html">LinkedIn</a>
               </li>
             </ul>
           </div>
