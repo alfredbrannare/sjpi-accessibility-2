@@ -268,7 +268,8 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-terracotta);
+    color: var(--color-charcoal);
+    font-weight: 700;
   }
   
   .product-info h3 {
